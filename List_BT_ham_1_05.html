@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập hàm</title>
+</head>
+<body>
+<script>
+    function findCorrectContent(array, content) {
+        let array1 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+        for (let i = 0; i < array.length; i++) {
+            if (content === array[i]) {
+                result = array1[i];
+            }
+        }
+        return result;
+    }
+    let a = prompt("Nhap ten mot ngoi sao");
+    let array2 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Debhe", "Regulus"];
+    alert(findCorrectContent(array2, a));
+</script>
+</body>
+</html>
